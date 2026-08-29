@@ -1,0 +1,66 @@
+************* Crash Head ****************
+Time Of Crash      : ٢٠٢٥_٠٥_١٤-١٣_٥٣_٤٤
+Device Manufacturer: Xiaomi
+Device Model       : 2409BRN2CA
+Android Version    : 14
+Android SDK        : 34
+App VersionName    : 151
+App VersionCode    : 149
+************* Crash Head ****************
+
+java.lang.Error: FATAL EXCEPTION [UnityMain]
+Unity version     : 2021.3.9f1
+Device model      : Xiaomi 2409BRN2CA
+Device fingerprint: Redmi/pond_global/pond:14/UP1A.231005.007/V816.0.11.0.UGTMIXM:user/release-keys
+Build Type        : Release
+Scripting Backend : IL2CPP
+ABI               : arm64-v8a
+Strip Engine Code : true
+
+Caused by: java.lang.Error: *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Version '2021.3.9f1 (ad3870b89536)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a'
+Build fingerprint: 'Redmi/pond_global/pond:14/UP1A.231005.007/V816.0.11.0.UGTMIXM:user/release-keys'
+Revision: '0'
+ABI: 'arm64'
+Timestamp: 2025-05-14 13:53:43+0300
+pid: 5640, tid: 11920, name: UnityMain  >>> com.jlyt.SurvivorIsland <<<
+uid: 10345
+signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+    x0  0000000000000000  x1  0000000000002e90  x2  0000000000000006  x3  00000073885a9dd0
+    x4  6b6b60621f6a626e  x5  6b6b60621f6a626e  x6  6b6b60621f6a626e  x7  7f7f7f7f7f7f7f7f
+    x8  00000000000000f0  x9  00000074c7cbede8  x10 0000000000000001  x11 00000074c7d3abf0
+    x12 00000074dfd9e020  x13 000000007fffffff  x14 000000000d97b912  x15 0000161c5713546f
+    x16 00000074c7da99f8  x17 00000074c7d83500  x18 0000007230cb8f48  x19 0000000000001608
+    x20 0000000000002e90  x21 00000000ffffffff  x22 00000073885ab000  x23 00000072d6533000
+    x24 0000007230ff82e8  x25 00000073402e8a60  x26 00000073885aa6a4  x27 00000073885aa6a0
+    x28 00000073885aa6b0  x29 00000073885a9e50
+    sp  00000073885a9db0  lr  00000074c7d2b238  pc  00000074c7d2b264
+
+backtrace:
+      #00 pc 0000000000094264  /apex/com.android.runtime/lib64/bionic/libc.so (abort+164) (BuildId: 84a42637b3a421b801818f5793418fca)
+      #01 pc 00000000000961cc  /apex/com.android.runtime/lib64/bionic/libc.so (fdopendir) (BuildId: 84a42637b3a421b801818f5793418fca)
+      #02 pc 000000000010311c  /apex/com.android.runtime/lib64/bionic/libc.so (NonPI::MutexLockWithTimeout(pthread_mutex_internal_t*, bool, timespec const*)) (BuildId: 84a42637b3a421b801818f5793418fca)
+      #03 pc 0000000000102fb0  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_mutex_lock+208) (BuildId: 84a42637b3a421b801818f5793418fca)
+      #04 pc 0000000000cd7430  /data/app/~~25SHZ2cp37AHgt4D1d-IkQ==/com.jlyt.SurvivorIsland-RkxVeiX4-nfn88r-RNiB8w==/lib/arm64/libunity.so (BuildId: b9b21fbd675cd55bc5d85f5aad4d887665e28c1c)
+      #05 pc 0000000000cd7660  /data/app/~~25SHZ2cp37AHgt4D1d-IkQ==/com.jlyt.SurvivorIsland-RkxVeiX4-nfn88r-RNiB8w==/lib/arm64/libunity.so (BuildId: b9b21fbd675cd55bc5d85f5aad4d887665e28c1c)
+      #06 pc 0000000000cd7ee4  /data/app/~~25SHZ2cp37AHgt4D1d-IkQ==/com.jlyt.SurvivorIsland-RkxVeiX4-nfn88r-RNiB8w==/lib/arm64/libunity.so (BuildId: b9b21fbd675cd55bc5d85f5aad4d887665e28c1c)
+      #07 pc 0000000000b4fcc8  /data/app/~~25SHZ2cp37AHgt4D1d-IkQ==/com.jlyt.SurvivorIsland-RkxVeiX4-nfn88r-RNiB8w==/lib/arm64/libunity.so (BuildId: b9b21fbd675cd55bc5d85f5aad4d887665e28c1c)
+      #08 pc 0000000000459cfc  /data/app/~~25SHZ2cp37AHgt4D1d-IkQ==/com.jlyt.SurvivorIsland-RkxVeiX4-nfn88r-RNiB8w==/lib/arm64/libunity.so (BuildId: b9b21fbd675cd55bc5d85f5aad4d887665e28c1c)
+      #09 pc 000000000045ad54  /data/app/~~25SHZ2cp37AHgt4D1d-IkQ==/com.jlyt.SurvivorIsland-RkxVeiX4-nfn88r-RNiB8w==/lib/arm64/libunity.so (BuildId: b9b21fbd675cd55bc5d85f5aad4d887665e28c1c)
+      #10 pc 00000000005f3238  /data/app/~~25SHZ2cp37AHgt4D1d-IkQ==/com.jlyt.SurvivorIsland-RkxVeiX4-nfn88r-RNiB8w==/lib/arm64/libunity.so (BuildId: b9b21fbd675cd55bc5d85f5aad4d887665e28c1c)
+      #11 pc 000000000060a278  /data/app/~~25SHZ2cp37AHgt4D1d-IkQ==/com.jlyt.SurvivorIsland-RkxVeiX4-nfn88r-RNiB8w==/lib/arm64/libunity.so (BuildId: b9b21fbd675cd55bc5d85f5aad4d887665e28c1c)
+      #12 pc 00000000000aa460  /system/framework/arm64/boot.oat (BuildId: 006ceb839077f0e7f46cfe29d42b4a845aa91f5c)
+
+	at libc.abort(abort:164)
+	at libc.fdopendir(fdopendir:0)
+	at libc.NonPI::MutexLockWithTimeout(pthread_mutex_internal_t*, bool, timespec const*)(MutexLockWithTimeout:0)
+	at libc.pthread_mutex_lock(pthread_mutex_lock:208)
+	at libunity.0xcd7430(Native Method)
+	at libunity.0xcd7660(Native Method)
+	at libunity.0xcd7ee4(Native Method)
+	at libunity.0xb4fcc8(Native Method)
+	at libunity.0x459cfc(Native Method)
+	at libunity.0x45ad54(Native Method)
+	at libunity.0x5f3238(Native Method)
+	at libunity.0x60a278(Native Method)
+	at boot.0xaa460(Native Method)
